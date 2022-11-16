@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 150px;
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(45deg, #00853e, #50c878);
+}
+.card_information{
+    width: 300px;
+    height: 400px;
+    background: #242628;
+    border-radius: 10px;
+    margin: 0px 30px;
+    overflow: hidden;
+}
+.card_img img{
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    transform: translateY(25px) translateX(90px);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:4px solid #f2726a;
+   
+}
+.card_name h2{
+    margin-top: 40px;
+   text-align: center;
+    color: white;
+    font-size:25px;
+}
+.card_position p{
+    margin-top: 15px;
+    text-align: center;
+    color:#f2726a;
+}
+.card_social ol a{
+    color:white;
+    margin: 0px;
+    cursor: pointer;
+}
+.card_social{
+    margin-top: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content:space-evenly;
+
+}
+.card_contact button{
+    color: white;
+    margin-top: 50px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 2px solid #f2726a;
+    background: #242628;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card_contact{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.card_contact button:hover{
+    background: #f2726a;
+}
+.card_social ol a :hover{
+    color: #f2726a;
+}
+.card_img img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: unset;
+}
