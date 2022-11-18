@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+.contain{
+    margin-bottom: 100px;
+    color:white;
+    width: 600px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+h1{
+    margin:30px 30px;
+    color: white;
+    font-size: 40px;
+}
+.process{
+    font-size: 25px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #bb69cc, #246bac);
+    align-items: center;
+}
