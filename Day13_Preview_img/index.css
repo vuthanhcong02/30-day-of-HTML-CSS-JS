@@ -21,8 +21,19 @@ body{
     border: 2px dashed white;
     width: 500px;
     height: 300px;
+    position: relative;
 }
 .upload i{
     margin-bottom: 30px;
     font-size: 80px;
+}
+.upload img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.error{
+    margin-top: 50px;
+    color:red;
 }
