@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(45deg, #3575d1, #7d4ed4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.upload{
+    color:white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px dashed white;
+    width: 500px;
+    height: 300px;
+}
+.upload i{
+    margin-bottom: 30px;
+    font-size: 80px;
+}
