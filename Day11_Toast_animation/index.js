@@ -7,11 +7,11 @@ btn_success.addEventListener('click',function(){
 
 })
 btn_warning.addEventListener('click',function(){
-    add_btn('warning')
+    add_btn('warning',2000)
 
 })
 btn_error.addEventListener('click',function(){
-    add_btn('error')
+    add_btn('error',2000)
 
 })
 function add_btn(status,timeout){
