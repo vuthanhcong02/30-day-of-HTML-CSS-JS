@@ -3,3 +3,83 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: #dadada;
+    height: 100vh;
+    display: flex;
+    margin:50px 50px;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+h3{
+    margin-top: 15px;
+    text-align: center;
+}
+.search{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    padding: 0 5px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    border: 2px solid #dadada;
+}
+.search i{
+    margin: 0 10px;
+    font-size: 20px;
+}
+.search input{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 20px;
+}
+.product{
+    display: flex;
+    height: 100%;
+} 
+.products{
+    flex-direction: column;
+    display: flex;
+    max-height: 400px;
+    margin: 20px 10px;
+    overflow-y: scroll;
+}
+.product:hover{
+    background: #ddd;
+    border-radius: 5px;
+}
+img{
+    object-fit: cover;
+    margin: 10px 10px;
+    width: 60px;
+    height: 60px;
+
+}
+.infor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.infor .name{
+    font-size: 15px;
+    font-weight: 600;
+}
+.hide{
+    display: none;
+}
