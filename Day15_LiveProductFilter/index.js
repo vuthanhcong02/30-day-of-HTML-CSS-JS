@@ -38,10 +38,10 @@ async function showProducts(){
     });
 }
 showProducts()
-var searchInput = document.querySelector('input')
+var searchInput = document.querySelector('.search input')
 searchInput.addEventListener('input',function(e){
     let txtSearch = e.target.value.trim().toLowerCase()
-    let listProuctDOM = document.querySelectorAll('.products')
+    let listProuctDOM = document.querySelectorAll('.product')
     listProuctDOM.forEach(items=>{
         if(items.innerText.toLowerCase().includes(txtSearch))
             items.classList.remove('hide')
