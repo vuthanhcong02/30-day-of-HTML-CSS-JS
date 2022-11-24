@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #8a66b4;
+   
+}
+.contain{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px 30px;
+    box-shadow:  15px 30px rgb(0 0 0 / 15%);
+}
+.contain .count_fb,.count_ytb,.count_tt{
+    background: #6b38b6;
+    width: 200px;
+    height: 150px;
+    color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 70px;
+    font-weight: 1000;
+    margin: 0 20px;
+}
+h5{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
