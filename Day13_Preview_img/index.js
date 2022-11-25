@@ -34,3 +34,5 @@ upload.addEventListener('change',function(e){
     // img.src = URL.createObjectURL(file)  //Blob
      upload_img.appendChild(img)
 })
+
+console.log('ok')
