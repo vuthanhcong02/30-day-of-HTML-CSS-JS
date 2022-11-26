@@ -18,6 +18,7 @@ var currentPos2 = {
 var isDrawing =false
 var colorPaint = 'ffffff'
 var size = 5
+sizeElement.innerText=size
 canvas.addEventListener('mousedown',function(e){
     currentPos ={
         x: e.offsetX,
@@ -34,7 +35,8 @@ canvas.addEventListener('mousemove',function(e){
 
 
         ctx.beginPath();
-        ctx.arc(currentPos.x, currentPos.y, size, 0, 2 * Math.PI);
+        ctx.arc(currentPos.x, currentPos.y, size, 0, 2 * Math.PI); // currentPos.x: toa do x cua dau mut
+                                                                    // currentPos.y: toa do y cua dau mut
         ctx.fill();
         ctx.fillStyle = colorPaint
         // Vẽ đầu mút tròn
@@ -43,10 +45,10 @@ canvas.addEventListener('mousemove',function(e){
         ctx.beginPath();
         ctx.moveTo(currentPos.x,currentPos.y)
         ctx.lineTo(currentPos2.x,currentPos2.y)
-        ctx.strokeStyle = colorPaint;
-        ctx.lineWidth = size *2
+        ctx.strokeStyle = colorPaint;   //mau vieng
+        ctx.lineWidth = size *2 //set do day cua net
         ctx.stroke()
-        currentPos.x=currentPos2.x
+        currentPos.x=currentPos2.x // gan toa do x y cho diem thu bang x,y cho diem thu 2
         currentPos.y=currentPos2.y
     }
 })
@@ -78,9 +80,9 @@ increase.addEventListener('click',function(e){
     sizeElement.innerText = size
 })
 clear.addEventListener('click',function(){
-    ctx.clearRect(0,0,canvas.width,canvas.height)
+    ctx.clearRect(0,0,canvas.width,canvas.height) //clearRect in canvas
 })
-save.addEventListener('click',function(e){
-    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); 
-    window.location.href=image
+save.addEventListener('click',function(e){         
+    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+    window.location.href=image; // it will save locally
 })
